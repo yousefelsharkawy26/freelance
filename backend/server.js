@@ -8,6 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use(express.static('frontend'))
+
 const userRoute = require("./routes/user.route");
 const serviceRoute = require("./routes/service.route");
 const proposalRoute = require("./routes/proposal.route");
